@@ -34,5 +34,12 @@ CICIDS2018 dataset
 ## Tools & Technologies
 Python, Pandas, Scikit-learn, Matplotlib  
 
+## Main Script
+The primary workflow of this project is organised in:
+- `main_pipeline.py`
+
+## Supporting Scripts
+Detailed model-specific analysis and evaluation are available in the `notebook/` folder.
+
 ## Skills Demonstrated
 Machine Learning, Deep Learning, Cybersecurity Analytics, Anomaly Detection, Model Evaluation, Feature Engineering
