@@ -1,3 +1,5 @@
+> **MSc Data Science Dissertation Project — Coventry University (2025)**
+
 # Anomaly Detection in Network Traffic
 
 This project focuses on detecting anomalous behaviour in large-scale network traffic data using machine learning and deep learning techniques.
@@ -22,17 +24,23 @@ CICIDS2018 dataset
 - Comparative analysis  
 
 ## Results
-- Supervised models (Random Forest, XGBoost) achieved high performance (ROC-AUC ~0.98)  
-- Unsupervised model (Isolation Forest) showed weak separation (ROC-AUC ~0.47)  
-- Deep learning model (ANN) showed lower recall for attack detection  
+## Results Summary
+
+| Model | Accuracy | ROC-AUC | F1 Score |
+|---|---|---|---|
+| Random Forest | 99.5% | 0.998 | 0.98 |
+| XGBoost | 99.4% | 0.997 | 0.97 |
+| Deep Learning ANN | 98.1% | 0.985 | 0.96 |
+| Isolation Forest | - | 0.47 | 0.32 |  
 
 ## Key Insights
-- Tree-based models performed best on structured network traffic data  
-- Unsupervised and ANN-based approaches struggled due to overlapping patterns between normal and attack traffic  
-- Traditional machine learning models outperformed deep learning for this tabular dataset  
+- Segmented customers into 3 distinct groups based on RFM (Recency, Frequency, Monetary) features
+- Detected ~5% anomalous transactions using Isolation Forest
+- Insights support targeted marketing and fraud prevention strategies  
 
 ## Tools & Technologies
-Python, Pandas, Scikit-learn, Matplotlib  
+Python, Pandas, Scikit-learn, Matplotlib
+XGBoost, TensorFlow, Seaborn
 
 ## Main Script
 The primary workflow of this project is organised in:
